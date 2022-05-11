@@ -20,7 +20,7 @@ class GroovyTestRanges {
 
     @Test
     void groovyTestRangesLoopWithStep() {
-0..100,
+
     }
 
 

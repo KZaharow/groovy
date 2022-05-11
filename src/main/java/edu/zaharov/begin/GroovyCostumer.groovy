@@ -1,8 +1,10 @@
 package edu.zaharov.begin
 
 import groovy.transform.Canonical
+import groovy.transform.ToString
 
 @Canonical
+@ToString
 class GroovyCostumer extends JavaCostumer {
 
     String name

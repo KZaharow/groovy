@@ -27,7 +27,6 @@ class GroovyTestClosure {
      def greeting = { "Hello, $it!" }
      assert greeting('Tom') == 'Hello, tom!'
 
-
  }
 
 
