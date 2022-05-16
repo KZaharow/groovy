@@ -11,6 +11,5 @@ class list {
 
         def arr = []
         println arr.getClass().getName();
-
     }
 }

@@ -13,6 +13,5 @@ class TestString {
     void testOperationsWithGString(){
         def s = "hello + ${}"
 
-
     }
 }

@@ -17,33 +17,32 @@ class GroovyTestClosure {
         arr << new GroovyCostumer(name: 'Sue', age: 25)
     }
 
+    @Test
+    void groovyTestClosureCommon() {
 
- @Test
- groovyTestClosureCommon(){
+        def closureWithOneArg = { str -> str.toUpperCase() }
+        assert closureWithOneArg('groovy') == 'GROOVY'
 
-     def closureWithOneArg = { str -> str.toUpperCase() }
-     assert closureWithOneArg('groovy') == 'GROOVY'
+        def greeting = { "Hello, $it!" }
+        assert greeting('Tom') == 'Hello, Tom!'
 
-     def greeting = { "Hello, $it!" }
-     assert greeting('Tom') == 'Hello, tom!'
-
- }
+    }
 
 
     @Test
     void testGroovyClosure1() {
 
         def costumer = new GroovyCostumer(name: 'Sue', age: 25)
-        costumer.each {it -> println(it)}
+        costumer.each { it -> println(it) }
     }
 
     //call it, getter & setter
     @Test
     void testGroovyClosure2() {
 
-        arr.each {println it}
-        arr.each {println it.age}
-        arr.each {println it.@age = 2}
+        arr.each { println it }
+        arr.each { println it.age }
+        arr.each { println it.@age = 2 }
     }
 
     /* {
