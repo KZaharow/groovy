@@ -4,14 +4,14 @@ import org.junit.jupiter.api.Test
 
 class TestString {
 
-    @Test
-    void testOperationsWithString(){
-        def s = 'hello'
-    }
+    final static String STRING_A = "HELLO GROOVY "
+    final static String STRING_B = "WORLD"
 
     @Test
-    void testOperationsWithGString(){
-        def s = "hello + ${}"
+    void testOperationsWithString(){
+        println STRING_A.plus(STRING_B)
+        println STRING_A.minus(STRING_B)
+        println STRING_A.multiply(2)
 
     }
 }

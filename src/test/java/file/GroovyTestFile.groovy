@@ -9,8 +9,7 @@ class GroovyTestFile {
 
         File file = new File('src/test/resources/data.txt')
         file.eachLine {line, index -> println "$line : $index"}
-        file.eachLine {println it}
-        file.eachLine {name ->println "$name"}
+        Object.is()
     }
 
     @Test

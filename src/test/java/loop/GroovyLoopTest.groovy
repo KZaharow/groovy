@@ -19,7 +19,6 @@ class GroovyLoopTest {
         println()
 
         for (int x in 0..10) {
-            //System.out.println(x);
             print x
         }
         println()
