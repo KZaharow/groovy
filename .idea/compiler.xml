@@ -9,5 +9,8 @@
         <module name="groovy-demo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="groovy" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

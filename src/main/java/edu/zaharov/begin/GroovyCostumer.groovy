@@ -1,10 +1,12 @@
 package edu.zaharov.begin
 
 import groovy.transform.Canonical
+import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
 @Canonical
 @ToString
+@EqualsAndHashCode
 class GroovyCostumer extends JavaCostumer {
 
     String name
