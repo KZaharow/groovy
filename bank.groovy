@@ -1,12 +1,10 @@
-package scratch
-
 import groovy.json.JsonSlurper
-import groovy.transform.ToString
+@Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7')
 import wslite.rest.RESTClient
 
 def rates = []
 def args = args ?: []
-def city = args[0] ?: 'Гомель'
+def city = args[0] ?: 'Минск'
 def currency = args[1] ?: 'RUB'
 def url = "https://belarusbank.by/api/kursExchange?city=${city}"
 println "${new Date()} поиск ${currency} в ${city} ...."
