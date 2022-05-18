@@ -10,16 +10,12 @@ class GroovyTestJson {
 
     @Test
     void testFromToJson() {
-
         def costumer = new GroovyCostumer(name: 'Den', age: 20)
-
         def json = JsonOutput.toJson(costumer)
         println json
-
         def customerFromJson = new JsonSlurper()
                 .parse(json.getBytes())
                 as GroovyCostumer
-
         Assertions.assertTrue(customerFromJson instanceof GroovyCostumer)
     }
 }
